@@ -1,3 +1,89 @@
+//questions next and prev buttons css
+.paginate-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    li.next {
+        color: #fff;
+        background-color: #409EFF;
+        border-color: #409EFF;
+        display: inline-block;
+        line-height: 1;
+        white-space: nowrap;
+        cursor: pointer;
+        border-color: #DCDFE6;
+        -webkit-appearance: none;
+        text-align: center;
+        box-sizing: border-box;
+        outline: none;
+        margin: 0 10px 0 0;
+        transition: .1s;
+        font-weight: 500;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        padding: 12px 20px;
+        font-size: 14px;
+        border-radius: 4px;
+        &:hover{
+            background: #66b1ff;
+            border-color: #66b1ff;
+            color: #fff;
+        }
+        &.disabled {
+            cursor: not-allowed;
+            opacity: 0.4;
+        }
+        &.disabled:hover {
+            cursor: not-allowed;
+            opacity: 0.4;
+            color: #fff;
+            background-color: #409EFF;
+            border-color: #409EFF;
+        }
+    }
+    li.prev {
+        color: #fff;
+        background-color: #909399;
+        border-color: #909399;
+        display: inline-block;
+        line-height: 1;
+        white-space: nowrap;
+        cursor: pointer;
+        border-color: #DCDFE6;
+        -webkit-appearance: none;
+        text-align: center;
+        box-sizing: border-box;
+        outline: none;
+        margin: 0 10px 0 0;
+        transition: .1s;
+        font-weight: 500;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        padding: 12px 20px;
+        font-size: 14px;
+        border-radius: 4px;
+        &:hover{
+            background: #a6a9ad;
+            border-color: #a6a9ad;
+            color: #fff;
+        }
+        &.disabled {
+            cursor: not-allowed;
+            opacity: 0.4;
+        }
+        &.disabled:hover {
+            cursor: not-allowed;
+            opacity: 0.4;
+            color: #fff;
+            background-color: #909399;
+            border-color: #909399;
+        }
+    }
+  }
+
+//footer css
 .el-footer{
     height: 300px;
     background: #c5c5c5;

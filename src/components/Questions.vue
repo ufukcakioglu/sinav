@@ -2,7 +2,10 @@
   <div>
     <paginate name="data" :list="data" :per="1">
       <div v-for="item in paginated('data')" :key="item.id" class="mold">
-        <h5>{{ item.questions }}</h5>
+        <el-row type="flex" justify="space-between" align="middle">
+          <h5>{{ item.id + ". " + item.questions }}</h5>
+          <h5>{{ item.id + "/" + data.length }}</h5>
+        </el-row>
         <el-radio-group class="rank">
           <el-radio
             v-for="(index, option) in item.answers"
@@ -17,8 +20,8 @@
     <paginate-links
       for="data"
       :simple="{
-        next: 'Next »',
-        prev: '« Back'
+        next: 'İleri',
+        prev: 'Geri'
       }"
     ></paginate-links>
   </div>
