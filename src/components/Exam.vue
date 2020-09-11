@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-container>
-      <el-header>
+      <el-header height="100px">
         <el-row type="flex" justify="center" align="middle">
           <el-col :span="12">
             <span>Exam Application</span>
