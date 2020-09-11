@@ -108,6 +108,9 @@ body {
 //main css
 .el-main {
     overflow: auto;
+    position: relative;
+    bottom: 60px;
+    margin-top: 50px;
     div ul:first-child {
         padding-left: 0;
         margin-top: 0;
@@ -120,9 +123,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
+    position: fixed;
     bottom: 0;
-    right: 0;
+    left: 0;
     width: 100%;
 }
 
